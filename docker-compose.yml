@@ -1,0 +1,10 @@
+version: '2'
+services:
+    wkhtmltopdf:
+        container_name: php-wkhtmltopdf
+        tty: true
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - ./files:/var/www/files
