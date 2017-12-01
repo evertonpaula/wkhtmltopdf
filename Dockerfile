@@ -1,4 +1,4 @@
-FROM php:7-fpm
+FROM php:7.1-fpm
 
 RUN apt-get update && apt-get install -y libmcrypt-dev
 RUN apt-get install -y vim cron supervisor
